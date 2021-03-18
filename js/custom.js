@@ -51,6 +51,7 @@ function validateForm(){
     }
     if(last_name.value == ""){
         alert("Last name can't be empty");
+        last_name.focus();
         return false;
     }
     if (!/^[a-zA-Z]*$/g.test(last_name.value)) {
@@ -60,14 +61,17 @@ function validateForm(){
     }
     if(dob.value == ""){
         alert("Date of Birth can't be empty");
+        dob.focus();
         return false;
     }
     if(addrs1.value == ""){
         alert("Address Line 1 can't be empty");
+        addrs1.focus();
         return false;
     }
     if(city.value == ""){
         alert("City field can't be empty");
+        city.focus();
         return false;
     }
     if (!/^[a-zA-Z]*$/g.test(city.value)) {
@@ -77,6 +81,7 @@ function validateForm(){
     }
     if(postal_code.value == ""){
         alert("Postal Code field can't be empty");
+        postal_code.focus();
         return false;
     }
     if (!/^[0-9]*$/g.test(postal_code.value)) {
@@ -86,10 +91,12 @@ function validateForm(){
     }
     if(country.value == ""){
         alert("Country field can't be empty");
+        country.focus();
         return false;
     }
     if(state.value == ""){
         alert("State field can't be empty");
+        state.focus();
         return false;
     }    
 }
