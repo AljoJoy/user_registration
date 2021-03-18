@@ -55,7 +55,7 @@ function validateForm(){
     }
     if (!/^[a-zA-Z]*$/g.test(last_name.value)) {
         alert("Only letters are allowed for last name field");
-        first_name.focus();
+        last_name.focus();
         return false;
     }
     if(dob.value == ""){
@@ -72,7 +72,7 @@ function validateForm(){
     }
     if (!/^[a-zA-Z]*$/g.test(city.value)) {
         alert("Only letters are allowed for city field");
-        first_name.focus();
+        city.focus();
         return false;
     }
     if(postal_code.value == ""){
@@ -81,7 +81,7 @@ function validateForm(){
     }
     if (!/^[0-9]*$/g.test(postal_code.value)) {
         alert("Only numbers are allowed for postal code field");
-        first_name.focus();
+        postal_code.focus();
         return false;
     }
     if(country.value == ""){
