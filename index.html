@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                <h2 class="mt-2 mb-2 text-center">User Registration</h2>
+                <form action="">
+                <div class="form-group">
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="addrs1">Address Line 1</label><br>
+                    <input type="text" class="form-control" id="addrs1" name="addrs1" required>
+                </div>
+                <div class="form-group">
+                    <label for="addrs2">Address Line 2</label><br>
+                    <input type="text" class="form-control" id="addrs2" name="addrs2">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label><br>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal_code">Postal Code</label><br>
+                    <input type="text" class="form-control" id="postal_code" name="postal_code required">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label><br>
+                    <select class="form-control" name="country" id="country" onchange="fill_states()" required>
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="US">United States</option>
+                        <option value="China">China</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Srilanka">Srilanka</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label><br>
+                    <select class="form-control" name="state" id="state" required>
+                        <option value="">State</option>                        
+                    </select>
+                </div>
+                <div class="form-group text-center">
+                    <input class="btn btn-primary" type="button" value="Submit" onclick="validateForm()">
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+            
+        </div>       
+    </div>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
